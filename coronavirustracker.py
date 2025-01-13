@@ -1,17 +1,9 @@
 from tkinter import *
-import os
-
 coro = Tk()
 coro.title("Coronavirus Tracker")
 coro.geometry('800x500+200+100')
 coro.configure(bg='#046173')
-
-# Check if the icon file exists before setting it
-icon_path = 'corona.ico'
-if os.path.exists(icon_path):
-    coro.iconbitmap(icon_path)
-else:
-    print(f"Warning: {icon_path} not found. Icon not set.")
+coro.iconbitmap('corona.ico')
 
 #labels
 
